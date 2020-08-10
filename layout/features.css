@@ -1,22 +1,19 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 5 of C:\Users\User\Desktop\week 2 responsive\layout\menu.scss, in `tablets'
-        from line 5 of C:\Users\User\Desktop\week 2 responsive\layout\menu.scss
+        on line 2 of C:\Users\User\Desktop\week 2 responsive\layout\features.scss, in `tablets'
+        from line 2 of C:\Users\User\Desktop\week 2 responsive\layout\features.scss
 
-1: .menu {
-2:     margin: 0 30px;
-3:     padding-top: 5px;
-4:     
-5:     @include tablets {
-6:         display: none;
-7:     }
-8: }
-9: 
-10: .menu__list {
+1: .features {
+2:     @include tablets {
+3:         display: none;
+4:     }
+5: }
+6: 
+7: .features__list {
 
 Backtrace:
-C:\Users\User\Desktop\week 2 responsive\layout\menu.scss:5:in `tablets'
-C:\Users\User\Desktop\week 2 responsive\layout\menu.scss:5
+C:\Users\User\Desktop\week 2 responsive\layout\features.scss:2:in `tablets'
+C:\Users\User\Desktop\week 2 responsive\layout\features.scss:2
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of C:\Users\User\Desktop\week 2 responsive\layout\menu.scss, in `tablets'\A         from line 5 of C:\Users\User\Desktop\week 2 responsive\layout\menu.scss\A \A 1: .menu {\A 2:     margin: 0 30px;\A 3:     padding-top: 5px;\A 4:     \A 5:     @include tablets {\A 6:         display: none;\A 7:     }\A 8: }\A 9: \A 10: .menu__list {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 2 of C:\Users\User\Desktop\week 2 responsive\layout\features.scss, in `tablets'\A         from line 2 of C:\Users\User\Desktop\week 2 responsive\layout\features.scss\A \A 1: .features {\A 2:     @include tablets {\A 3:         display: none;\A 4:     }\A 5: }\A 6: \A 7: .features__list {"; }

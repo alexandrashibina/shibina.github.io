@@ -1,27 +1,24 @@
 /*
-Error: Undefined mixin 'tablets'.
-        on line 5 of C:\Users\User\Desktop\week 2 responsive\layout\menu.scss, in `tablets'
-        from line 5 of C:\Users\User\Desktop\week 2 responsive\layout\menu.scss
+Error: Undefined variable: "$socialGrey".
+        on line 31 of C:\Users\User\Desktop\week 2 responsive\layout\social.scss
 
-1: .menu {
-2:     margin: 0 30px;
-3:     padding-top: 5px;
-4:     
-5:     @include tablets {
-6:         display: none;
-7:     }
-8: }
-9: 
-10: .menu__list {
+26:     text-decoration: none;
+27:     width: 20px;
+28:     height: 20px;
+29:     overflow: hidden;
+30:     position: relative;
+31:     fill: $socialGrey;
+32: 
+33:     &:hover {
+34:         fill: #000000;
+35:     }
+36: }
 
 Backtrace:
-C:\Users\User\Desktop\week 2 responsive\layout\menu.scss:5:in `tablets'
-C:\Users\User\Desktop\week 2 responsive\layout\menu.scss:5
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:\Users\User\Desktop\week 2 responsive\layout\social.scss:31
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -65,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of C:\Users\User\Desktop\week 2 responsive\layout\menu.scss, in `tablets'\A         from line 5 of C:\Users\User\Desktop\week 2 responsive\layout\menu.scss\A \A 1: .menu {\A 2:     margin: 0 30px;\A 3:     padding-top: 5px;\A 4:     \A 5:     @include tablets {\A 6:         display: none;\A 7:     }\A 8: }\A 9: \A 10: .menu__list {"; }
+  content: "Error: Undefined variable: \"$socialGrey\".\A         on line 31 of C:\Users\User\Desktop\week 2 responsive\layout\social.scss\A \A 26:     text-decoration: none;\A 27:     width: 20px;\A 28:     height: 20px;\A 29:     overflow: hidden;\A 30:     position: relative;\A 31:     fill: $socialGrey;\A 32: \A 33:     &:hover {\A 34:         fill: #000000;\A 35:     }\A 36: }"; }

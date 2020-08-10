@@ -1,5 +1,6 @@
 .header {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  align-items: flex-start;
+  justify-content: space-between; }
+
+/*# sourceMappingURL=header.css.map */
