@@ -61,6 +61,9 @@
     @include phones {
         padding: 0 1%;
         margin-bottom: rem(45px);
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &::before {
@@ -71,6 +74,10 @@
         transform: translateX(50%);
 
         @include phones {
+            display: none;
+        }
+
+        @include tablets {
             display: none;
         }
     }
