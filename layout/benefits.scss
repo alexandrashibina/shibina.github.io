@@ -1,9 +1,9 @@
 .benefits-section {
-    background: url(./img/pictures/leaf_white.png) left top 25% no-repeat;
+    background: url(/img/pictures/leaf_white.png) left top 25% no-repeat;
     position: relative;
 
     &:before {
-        content: url(./img/pictures/berries_and_crackers.png);
+        content: url(/img/pictures/berries_and_crackers.png);
         position: absolute;
         left: 0;
         bottom: rem(-190px);
@@ -64,7 +64,7 @@
     }
 
     &::before {
-        content: url(./img/pictures/shape_1.png);
+        content: url(/img/pictures/shape_1.png);
         position: absolute;
         top: rem(30px);
         right: 0;

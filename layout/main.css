@@ -137,7 +137,7 @@ table {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  background: url(./img/pictures/chocolates.png) right center/50% auto no-repeat;
+  background: url(/img/pictures/chocolates.png) right center/50% auto no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__container {
@@ -291,7 +291,7 @@ table {
     content: "";
     height: 19.7777777778rem;
     width: 19.0555555556rem;
-    background: url(./img/pictures/header_768.png) center center/contain no-repeat;
+    background: url(/img/pictures/header_768.png) center center/contain no-repeat;
     margin-bottom: 0.5555555556rem;
   }
 }
@@ -430,11 +430,11 @@ table {
 }
 
 .benefits-section {
-  background: url(./img/pictures/leaf_white.png) left top 25% no-repeat;
+  background: url(/img/pictures/leaf_white.png) left top 25% no-repeat;
   position: relative;
 }
 .benefits-section:before {
-  content: url(./img/pictures/berries_and_crackers.png);
+  content: url(/img/pictures/berries_and_crackers.png);
   position: absolute;
   left: 0;
   bottom: -10.5555555556rem;
@@ -499,7 +499,7 @@ table {
   }
 }
 .benefits__item::before {
-  content: url(./img/pictures/shape_1.png);
+  content: url(/img/pictures/shape_1.png);
   position: absolute;
   top: 1.6666666667rem;
   right: 0;
@@ -569,7 +569,7 @@ table {
 }
 
 .reviews-section {
-  background: url(./img/pictures/strawberry.png) top right no-repeat;
+  background: url(/img/pictures/strawberry.png) top right no-repeat;
   position: relative;
 }
 .reviews-section:before {
@@ -577,7 +577,7 @@ table {
   content: "";
   height: 14.4444444444rem;
   width: 5.5555555556rem;
-  background: url(./img/pictures/another_leaf_white.png) center left/contain no-repeat;
+  background: url(/img/pictures/another_leaf_white.png) center left/contain no-repeat;
   left: -0.8888888889rem;
   bottom: -4.2777777778rem;
   z-index: 15;
@@ -587,7 +587,7 @@ table {
   content: "";
   height: 9.5rem;
   width: 8.3333333333rem;
-  background: url(./img/pictures/berries.png) center left/contain no-repeat;
+  background: url(/img/pictures/berries.png) center left/contain no-repeat;
   left: -1.5555555556rem;
   bottom: -2.4444444444rem;
   z-index: 20;
@@ -603,7 +603,7 @@ table {
 }
 
 .reviews__display {
-  background: url(./img/pictures/reviews_pic.png) top right no-repeat, #f8faf9;
+  background: url(/img/pictures/reviews_pic.png) top right no-repeat, #f8faf9;
   padding: 2.7777777778rem 2.5555555556rem 1.8888888889rem;
   margin-bottom: 1.5555555556rem;
   overflow: hidden;
@@ -735,13 +735,13 @@ table {
 }
 
 .order-section {
-  background: url(./img/pictures/blueberry.png) left 3% bottom 10% no-repeat, url(./img/pictures/green_leaf.png) right 1% bottom 5% no-repeat, url(./img/pictures/background_form.png) center center/cover no-repeat;
+  background: url(/img/pictures/blueberry.png) left 3% bottom 10% no-repeat, url(/img/pictures/green_leaf.png) right 1% bottom 5% no-repeat, url(/img/pictures/background_form.png) center center/cover no-repeat;
   color: #365a49;
   position: relative;
 }
 @media screen and (max-width: 768px) {
   .order-section {
-    background: url(./img/pictures/background_form.png) center center/cover no-repeat;
+    background: url(/img/pictures/background_form.png) center center/cover no-repeat;
   }
 }
 .order-section .section__title {
@@ -752,7 +752,7 @@ table {
   content: "";
   height: 8.0555555556rem;
   width: 8.0555555556rem;
-  background: url(./img/pictures/blackberry.png) center right/contain no-repeat;
+  background: url(/img/pictures/blackberry.png) center right/contain no-repeat;
   position: absolute;
   right: -0.2777777778rem;
   top: -4.4444444444rem;
@@ -864,7 +864,7 @@ table {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(./img/icons/checkmark.svg) center center no-repeat;
+  background: url(/img/icons/checkmark.svg) center center no-repeat;
 }
 
 .radio__item {
@@ -896,7 +896,7 @@ table {
 }
 
 .map-section {
-  background: url(./img/pictures/map.png) center center/cover no-repeat;
+  background: url(/img/pictures/map.png) center center/cover no-repeat;
 }
 
 .footer {

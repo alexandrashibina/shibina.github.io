@@ -1,5 +1,5 @@
 .reviews-section {
-    background: url(./img/pictures/strawberry.png) top right no-repeat;
+    background: url(/img/pictures/strawberry.png) top right no-repeat;
     position: relative;
 
     &:before {
@@ -7,7 +7,7 @@
         content: "";
         height: rem(260px);
         width: rem(100px);
-        background: url(./img/pictures/another_leaf_white.png) center left / contain no-repeat;
+        background: url(/img/pictures/another_leaf_white.png) center left / contain no-repeat;
         left: rem(-16px);
         bottom: rem(-77px);
         z-index: $z-leaf-pic;
@@ -18,7 +18,7 @@
         content: "";
         height: rem(171px);
         width: rem(150px);
-        background: url(./img/pictures/berries.png) center left / contain no-repeat;
+        background: url(/img/pictures/berries.png) center left / contain no-repeat;
         left: rem(-28px);
         bottom: rem(-44px);
         z-index: $z-berries-pic;
@@ -35,7 +35,7 @@
 }
 
 .reviews__display {
-    background: url(./img/pictures/reviews_pic.png) top right no-repeat, #f8faf9;
+    background: url(/img/pictures/reviews_pic.png) top right no-repeat, #f8faf9;
     padding: rem(50px) rem(46px) rem(34px);
     margin-bottom: rem(28px);
     overflow: hidden;
