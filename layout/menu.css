@@ -1,0 +1,16 @@
+.menu__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 44px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link {
+  font-size: 14px;
+  text-decoration: none;
+}
+.menu__link:hover {
+  color: #f5170e;
+}

@@ -1,0 +1,13 @@
+.radio {
+  display: flex;
+}
+
+.radio__item {
+  display: none;
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+}

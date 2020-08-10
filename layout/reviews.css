@@ -1,0 +1,18 @@
+.reviews-section {
+  position: relative;
+}
+
+.reviews__display {
+  background: #f8faf9;
+  padding: 50px 46px 34px;
+}
+
+.reviews__display-inner {
+  display: flex;
+}
+
+.reviews__avatar {
+  height: 260px;
+  width: 254px;
+  overflow: hidden;
+}

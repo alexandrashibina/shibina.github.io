@@ -1,0 +1,83 @@
+.benefits-section {
+  background: url(/img/pictures/leaf_white.png) left top 55% no-repeat;
+  position: relative;
+}
+.benefits-section:before {
+  content: url(/img/pictures/berries_and_crackers.png);
+  position: absolute;
+  left: rem(-10px);
+  bottom: rem(-140px);
+}
+
+.benefits {
+  text-align: center;
+  margin-bottom: rem(48px);
+}
+
+.benefits__list {
+  display: flex;
+}
+
+.benefits-section__title {
+  margin-bottom: rem(0px);
+}
+
+.benefits__text {
+  padding: 0 26%;
+}
+
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+}
+.benefits__item::before {
+  content: url(/img/pictures/shape_1.png);
+  position: absolute;
+  top: rem(30px);
+  right: 0;
+  transform: translateX(50%);
+}
+.benefits__item:first-child {
+  padding-left: 0;
+}
+.benefits__item:last-child {
+  padding-right: 0;
+}
+.benefits__item:last-child:before {
+  display: none;
+}
+
+.benefit {
+  text-align: center;
+}
+
+.benefit__image {
+  margin-bottom: rem(20px);
+}
+
+.benefit__image-wrapper {
+  display: inline-block;
+  height: rem(126px);
+  width: rem(126px);
+  position: relative;
+  background: #f3f5f3;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.benefit__icon {
+  height: rem(69px);
+  width: rem(75px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.benefit__content-title {
+  font-size: rem(27px);
+  font-weight: bold;
+  margin-bottom: rem(10px);
+  color: #000000;
+}
