@@ -15,9 +15,9 @@ $socialGrey: #b2b2b2;
 //z-indexes
 $z-overlay-menu: 70;
 $z-fixed-menu: 50;
-$z-crackers-pic: 10;
 $z-berries-pic: 20;
 $z-leaf-pic: 15;
+$z-cracker-pic: 10;
 
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
@@ -47,6 +47,9 @@ $z-leaf-pic: 15;
 
 //why-section
 @import 'benefits';
+
+//slider-section
+@import 'slider';
 
 //reviews-section
 @import 'reviews';

@@ -5,9 +5,9 @@
     &:before {
         content: url(../img/pictures/berries_and_crackers.png);
         position: absolute;
-        left: 0;
-        bottom: rem(-190px);
-        z-index: $z-crackers-pic;
+        left: rem(-50px);
+        bottom: rem(-155px);
+        z-index: $z-cracker-pic;
     }
 
     @include tablets {

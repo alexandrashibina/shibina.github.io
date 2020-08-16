@@ -1,0 +1,253 @@
+
+
+
+.slider-section {
+    background-color: #F8FAF9;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: rem(-220px);
+        width: rem(196px);
+        height: rem(463px);
+        background: url(../img/pictures/palm_leaf_white.png) center center / contain no-repeat;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: rem(-50px);
+        width: rem(135px);
+        height: rem(112px);
+        background: url(../img/pictures/many_bluberries.png) center center / contain no-repeat;
+    }
+}
+
+.slider__list {
+    display: flex;
+    height: 100%;width: auto;
+    padding: 0;
+    margin: 0;
+    transition: .5s all ease-out;
+}
+
+.slider__item {
+    height: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    position: relative;
+
+}
+
+.slider__arrow {
+    width: rem(13px);
+    height: rem(28px);
+    overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+
+    &--left {
+        top: 50%;
+        left: 1%;
+    }
+    
+    &--right {
+        transform: rotate(180deg);
+        top: 50%;
+        right: 1%;
+    }
+}
+
+.slider__image {
+    display: flex;
+    align-items: center;
+    width: rem(545px);
+    height: rem(470px);
+    overflow: hidden;
+
+    @include tablets {
+        display: none;
+    }
+
+}
+
+.slider__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+    @include tablets {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        &::before {
+            content: "";
+            width: rem(450px);
+            height: rem(450px);
+            background: url(../img/pictures/chocolates2.png) center center / contain no-repeat;
+        }
+    }
+}
+
+.slider__ingredients {
+    margin-bottom: rem(30px);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: rem(14px);
+    position: relative;
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: rem(91px);
+        width: rem(91px);
+        position: relative;
+        border-radius: rem(4px);
+        overflow: hidden;
+        background-color: $blue;
+        cursor: pointer;
+    }
+
+    &-icon {
+        height: rem(46px);
+        width: rem(46px);
+        fill: #ffffff;
+
+        &-element {
+            fill: #000000;
+        }
+    }
+
+
+    &:hover {
+        .slider__ingredients-list {
+            display: flex;
+        }
+    }
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.slider__desc{
+    color: #666666;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    &-title {
+        font-size: rem(36px);
+        font-weight: bold;
+        color: #000000;
+        text-transform: uppercase;
+        margin-bottom: rem(10px);
+        line-height: 1.2;
+    }
+
+    &-text {
+        margin-bottom: rem(20px);
+        line-height: 1.2;
+    }
+
+    &-list {
+        margin-bottom: rem(30px);
+        .details {
+            .details__desc {
+                font-weight: bold;
+                color: #000000;
+            }
+        }
+    }
+
+    &-item {
+        display: inline-flex;
+        flex-direction: column;
+        margin-right: rem(80px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @include tablets {
+        align-items: center;
+
+        &-title {
+            text-align: center;
+            font-size: rem(30px);
+        }
+        &-text {
+            text-align: center;
+            width: 70%;
+        }
+    }
+}
+
+.slider__order {
+    display: flex;
+    align-items: center;
+
+    &-price {
+        font-size: rem(50px);
+        font-weight: 300;
+        color: #151515;
+        margin-right: rem(25px);
+    }
+}
+
+
+
+//slider hover with ingredients
+
+.slider__ingredients-list {
+    position: absolute;
+    top: 0;
+    left: rem(90px);
+    width: rem(270px);
+    height: rem(329px);
+    border-radius: rem(5px);
+    background-color: rgba(255, 255, 255, .93);
+    border: solid 1px #eeeeee;
+    color: #333537;
+    padding: rem(24px) rem(30px);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: rem(16px);
+    font-weight: 500;
+    text-transform: initial;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        display: inline-flex;
+        width: rem(35px);
+        height: rem(35px);
+        overflow: hidden;
+        margin-right: rem(25px);
+    
+        &-element {
+            width: 100%;
+            height: 100%;
+            fill: #333537;
+        }
+    }
+
+    &__desc {
+        margin-right: auto;
+    }
+}

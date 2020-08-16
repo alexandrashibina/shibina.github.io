@@ -2,7 +2,7 @@
     background: url(../img/pictures/leaf.png) right bottom no-repeat;
     background-color: $blue;
     color: #ffffff;
-    height: 100vh;
+    height: 100%;
     min-height: rem(650px);
     position: relative;
 
@@ -28,7 +28,6 @@
 
     @include tablets {
         background-position: right bottom 220%;
-        height: 100%;
     }
 }
 
