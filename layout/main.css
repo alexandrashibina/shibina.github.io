@@ -669,7 +669,7 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 30%;
 }
 @media screen and (max-width: 768px) {
   .slider__content {
