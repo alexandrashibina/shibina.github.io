@@ -9,10 +9,6 @@
     z-index: $z-overlay-menu;
     display: flex;
     justify-content: center;
-    
-    @include tablets {
-        //left: 0;       
-    } 
 }
 
 .overlay__icon {
@@ -22,6 +18,7 @@
     position: absolute;
     top: 2%;
     right: 6%;
+    cursor: pointer;
 
 }
 

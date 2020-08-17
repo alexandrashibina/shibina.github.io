@@ -37,7 +37,7 @@
                                 <span class="contacts__text">8 800 903 90 90</span>
                             </a>
                         </address>
-                        <a href="" class="hamburger__icon">
+                        <a href="" class="hamburger__icon" id="openOverlay">
                             <span class="hamburger__plank"></span>
                             <span class="hamburger__plank"></span>
                             <span class="hamburger__plank"></span>
@@ -140,14 +140,14 @@
             </section>
             <section class="section slider-section">
                 <div class="container slider">
-                    <ul class="slider__list">
+                    <ul class="slider__list" id="sliderRoot">
                         <li class="slider__item">
-                            <div class="slider__arrow">
-                                <svg class="slider__arrow slider__arrow--left">
-                                    <use xlink:href="./img/icons/arrow.svg#arrow"></use>
+                            <div class="slider__arrows">
+                                <svg class="arrow arrow--left">
+                                    <use xlink:href="./layout/sprites.svg#arrow"></use>
                                 </svg>
-                                <svg class="slider__arrow slider__arrow--right">
-                                    <use xlink:href="./img/icons/arrow.svg#arrow"></use>
+                                <svg class="arrow arrow--right">
+                                    <use xlink:href="./layout/sprites.svg#arrow"></use>
                                 </svg>
                             </div>
                             <div class="slider__image">
@@ -161,11 +161,11 @@
                                         </svg>
                                         <div class="slider__ingredients-title">Состав</div>
                                     </div>
-                                    <ul class="slider__ingredients-list" id="sliderRoot">
+                                    <ul class="slider__ingredients-list">
                                         <li class="slider__ingredients-item item">
                                             <div class="item__icon">
                                                 <svg class="item__icon-element">
-                                                    <use xlink:href="./layout/sprites.svg#grape"></use>
+                                                    <use xlink:href="./layout/sprites.svg#ingredients"></use>
                                                 </svg>
                                             </div>
                                             <span class="item__desc">Виноград</span>
@@ -241,12 +241,12 @@
                             </div>
                         </li>
                         <li class="slider__item">
-                            <div class="slider__arrow">
-                                <svg class="slider__arrow slider__arrow--left">
-                                    <use xlink:href="./img/icons/arrow.svg#arrow"></use>
+                            <div class="slider__arrows">
+                                <svg class="arrow arrow--left">
+                                    <use xlink:href="./layout/sprites.svg#arrow"></use>
                                 </svg>
-                                <svg class="slider__arrow slider__arrow--right">
-                                    <use xlink:href="./img/icons/arrow.svg#arrow"></use>
+                                <svg class="arrow arrow--right">
+                                    <use xlink:href="./layout/sprites.svg#arrow"></use>
                                 </svg>
                             </div>
                             <div class="slider__image">
@@ -348,115 +348,114 @@
                                 </div>
                             </div>
                         </li>
-                    </li>
-                    <li class="slider__item">
-                        <div class="slider__arrow">
-                            <svg class="slider__arrow slider__arrow--left">
-                                <use xlink:href="./img/icons/arrow.svg#arrow"></use>
-                            </svg>
-                            <svg class="slider__arrow slider__arrow--right">
-                                <use xlink:href="./img/icons/arrow.svg#arrow"></use>
-                            </svg>
-                        </div>
-                        <div class="slider__image">
-                            <img src="./img/pictures/chocolates1.png" alt="chocolates">
-                        </div>
-                        <div class="slider__content">
-                            <div class="slider__ingredients">
-                                <div class="slider__ingredients-wrapper">
-                                    <svg class="slider__ingredients-icon">
-                                        <use xlink:href="./layout/sprites.svg#ingredients"></use>
-                                    </svg>
-                                    <div class="slider__ingredients-title">Состав</div>
+                        <li class="slider__item">
+                            <div class="slider__arrows">
+                                <svg class="arrow arrow--left">
+                                    <use xlink:href="./layout/sprites.svg#arrow"></use>
+                                </svg>
+                                <svg class="arrow arrow--right">
+                                    <use xlink:href="./layout/sprites.svg#arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="slider__image">
+                                <img src="./img/pictures/chocolates1.png" alt="chocolates">
+                            </div>
+                            <div class="slider__content">
+                                <div class="slider__ingredients">
+                                    <div class="slider__ingredients-wrapper">
+                                        <svg class="slider__ingredients-icon">
+                                            <use xlink:href="./layout/sprites.svg#ingredients"></use>
+                                        </svg>
+                                        <div class="slider__ingredients-title">Состав</div>
+                                    </div>
+                                    <ul class="slider__ingredients-list" id="sliderRoot">
+                                        <li class="slider__ingredients-item item">
+                                            <div class="item__icon">
+                                                <svg class="item__icon-element">
+                                                    <use xlink:href="./layout/sprites.svg#grape"></use>
+                                                </svg>
+                                            </div>
+                                            <span class="item__desc">Овес</span>
+                                            <span class="item__value">25 г</span>
+                                        </li>
+                                        <li class="slider__ingredients-item item">
+                                            <div class="item__icon">
+                                                <svg class="item__icon-element">
+                                                    <use xlink:href="./layout/sprites.svg#wallnut"></use>
+                                                </svg>
+                                            </div>
+                                            <span class="item__desc">Мор. водоросли</span>
+                                            <span class="item__value">15 г</span>
+                                        </li>
+                                        <li class="slider__ingredients-item item">
+                                            <div class="item__icon">
+                                                <svg class="item__icon-element">
+                                                    <use xlink:href="./layout/sprites.svg#seeds"></use>
+                                                </svg>
+                                            </div>
+                                            <span class="item__desc">Миндаль</span>
+                                            <span class="item__value">20 г</span>
+                                        </li>
+                                        <li class="slider__ingredients-item item">
+                                            <div class="item__icon">
+                                                <svg class="item__icon-element">
+                                                    <use xlink:href="./layout/sprites.svg#powder"></use>
+                                                </svg>
+                                            </div>
+                                            <span class="item__desc">Сухое молоко</span>
+                                            <span class="item__value">10 г</span>
+                                        </li>
+                                        <li class="slider__ingredients-item item">
+                                            <div class="item__icon">
+                                                <svg class="item__icon-element">
+                                                    <use xlink:href="./layout/sprites.svg#apitherapy"></use>
+                                                </svg>
+                                            </div>
+                                            <span class="item__desc">Тыкв. семечи</span>
+                                            <span class="item__value">20 г</span>
+                                        </li>
+                                        <li class="slider__ingredients-item item">
+                                            <div class="item__icon">
+                                                <svg class="item__icon-element">
+                                                    <use xlink:href="./layout/sprites.svg#apitherapy"></use>
+                                                </svg>
+                                            </div>
+                                            <span class="item__desc">Зам. сахара</span>
+                                            <span class="item__value">4 г</span>
+                                        </li>
+                                        <li class="slider__ingredients-item item">
+                                            <div class="item__icon">
+                                                <svg class="item__icon-element">
+                                                    <use xlink:href="./layout/sprites.svg#beans"></use>
+                                                </svg>
+                                            </div>
+                                            <span class="item__desc">Какао бобы</span>
+                                            <span class="item__value">4 г</span>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul class="slider__ingredients-list" id="sliderRoot">
-                                    <li class="slider__ingredients-item item">
-                                        <div class="item__icon">
-                                            <svg class="item__icon-element">
-                                                <use xlink:href="./layout/sprites.svg#grape"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="item__desc">Овес</span>
-                                        <span class="item__value">25 г</span>
-                                    </li>
-                                    <li class="slider__ingredients-item item">
-                                        <div class="item__icon">
-                                            <svg class="item__icon-element">
-                                                <use xlink:href="./layout/sprites.svg#wallnut"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="item__desc">Мор. водоросли</span>
-                                        <span class="item__value">15 г</span>
-                                    </li>
-                                    <li class="slider__ingredients-item item">
-                                        <div class="item__icon">
-                                            <svg class="item__icon-element">
-                                                <use xlink:href="./layout/sprites.svg#seeds"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="item__desc">Миндаль</span>
-                                        <span class="item__value">20 г</span>
-                                    </li>
-                                    <li class="slider__ingredients-item item">
-                                        <div class="item__icon">
-                                            <svg class="item__icon-element">
-                                                <use xlink:href="./layout/sprites.svg#powder"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="item__desc">Сухое молоко</span>
-                                        <span class="item__value">10 г</span>
-                                    </li>
-                                    <li class="slider__ingredients-item item">
-                                        <div class="item__icon">
-                                            <svg class="item__icon-element">
-                                                <use xlink:href="./layout/sprites.svg#apitherapy"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="item__desc">Тыкв. семечи</span>
-                                        <span class="item__value">20 г</span>
-                                    </li>
-                                    <li class="slider__ingredients-item item">
-                                        <div class="item__icon">
-                                            <svg class="item__icon-element">
-                                                <use xlink:href="./layout/sprites.svg#apitherapy"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="item__desc">Зам. сахара</span>
-                                        <span class="item__value">4 г</span>
-                                    </li>
-                                    <li class="slider__ingredients-item item">
-                                        <div class="item__icon">
-                                            <svg class="item__icon-element">
-                                                <use xlink:href="./layout/sprites.svg#beans"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="item__desc">Какао бобы</span>
-                                        <span class="item__value">4 г</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="slider__desc">
-                                <div class="slider__desc-title">Батончик “Морские водоросли”</div>
-                                <div class="slider__desc-text">
-                                    <p>Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                <div class="slider__desc">
+                                    <div class="slider__desc-title">Батончик “Морские водоросли”</div>
+                                    <div class="slider__desc-text">
+                                        <p>Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                    </div>
+                                    <ul class="slider__desc-list">
+                                        <li class="slider__desc-item details">
+                                            <div class="details__title">Калорийность</div>
+                                            <div class="details__desc">120 ккал</div>
+                                        </li>
+                                        <li class="slider__desc-item details">
+                                            <div class="details__title">Вес</div>
+                                            <div class="details__desc">98 грамм</div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul class="slider__desc-list">
-                                    <li class="slider__desc-item details">
-                                        <div class="details__title">Калорийность</div>
-                                        <div class="details__desc">120 ккал</div>
-                                    </li>
-                                    <li class="slider__desc-item details">
-                                        <div class="details__title">Вес</div>
-                                        <div class="details__desc">98 грамм</div>
-                                    </li>
-                                </ul>
+                                <div class="slider__order">
+                                    <span class="slider__order-price">140 ₽</span>
+                                    <button type="submit" class="button button__form button--color--green">Заказать</button>
+                                </div>
                             </div>
-                            <div class="slider__order">
-                                <span class="slider__order-price">140 ₽</span>
-                                <button type="submit" class="button button__form button--color--green">Заказать</button>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -640,7 +639,7 @@
         </ul>
     </nav>
     <div class="overlay">
-        <svg class="overlay__icon">
+        <svg class="overlay__icon" id="closeOverlay">
             <use xlink:href="./layout/sprites.svg#close"></use>
         </svg>
         <div class="overlay__menu">
@@ -657,5 +656,8 @@
             </nav>
         </div>
     </div>
+    <script src="./js/swipe.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/overlay-modal.js"></script>
 </body>
 </html>
