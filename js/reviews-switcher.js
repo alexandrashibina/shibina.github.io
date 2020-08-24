@@ -4,13 +4,13 @@ const findBlockByAlias = (alias) => {
     });
 };
 
-$(".interactive-avatar__link").click((e) => {
+$(".interactive-avatar").click((e) => {
     e.preventDefault();
 
     const $this = $(e.currentTarget);
     const target = $this.attr("data-open");
     const itemToShow = findBlockByAlias(target);
-    const currItem = $this.closest(".interactive-avatar__link");
+    const currItem = $this.closest(".interactive-avatar");
 
     itemToShow.addClass("active").siblings().removeClass("active");
     currItem.addClass("active").siblings().removeClass("active");

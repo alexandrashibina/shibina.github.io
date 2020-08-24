@@ -9,6 +9,9 @@
     &:hover {
         border-color: $darkGreen;  
     }
+    &.active {
+        border-color: $darkGreen;
+    }
 }
 
 .interactive-avatar__link {
@@ -18,10 +21,6 @@
     bottom: 0;
     right: 0;
     display: block;
-
-    &.active {
-        border-color: $darkGreen;  
-    }
 }
 
 .interactive-avatar__photo {

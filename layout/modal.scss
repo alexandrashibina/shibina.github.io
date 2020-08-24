@@ -8,6 +8,16 @@
     z-index: $z-overlay-menu;
     justify-content: center;
 
+    .fancybox-slide--html {
+        padding: 0;
+    
+        .fancybox-close-small {
+            position: absolute;
+            top: 35%;
+            right: 32%;
+        }
+    }
+
     &__container {
         width: rem(309px);
         height: rem(176px);
