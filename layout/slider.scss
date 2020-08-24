@@ -1,6 +1,6 @@
 .slider-section {
     background-color: #F8FAF9;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: relative;
 
@@ -26,14 +26,13 @@
 }
 
 .slider {
-    width: 100%;
-    max-width: 100%;
+    overflow: hidden;
 }
 
 .slider__list {
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 100% !important; //slider plugin
     padding: 0;
     margin: 0;
     flex-grow: 0;
@@ -49,11 +48,16 @@
     padding: 0 4%;
     display: flex;
     align-items: center;
+    position: relative;
+
+    @include tablets {
+        flex-direction: column;
+    }
 
 }
 
 .arrow {
-    width: rem(13px);
+    width: rem(28px);
     height: rem(28px);
     fill: #000000;
     overflow: hidden;
@@ -81,7 +85,14 @@
     overflow: hidden;
 
     @include tablets {
-        display: none;
+        width: rem(450px);
+        height: rem(450px);
+        object-fit: contain;
+    }
+
+    @include phones {
+        width: 100%;
+        height: 100%;
     }
 
 }
@@ -90,19 +101,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 69%;
 
-    @include tablets {
-        display: flex;
-        width: 100%;
+     @include tablets {
         align-items: center;
-
-        &::before {
-            content: "";
-            width: rem(450px);
-            height: rem(450px);
-            background: url(../img/pictures/chocolates2.png) center center / contain no-repeat;
-        }
+        width: 100%;
     }
 }
 
@@ -259,4 +262,12 @@
     &__desc {
         margin-right: auto;
     }
+}
+
+//slider plugin 
+.bx-wrapper {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
 }

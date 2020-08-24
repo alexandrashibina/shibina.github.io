@@ -35,6 +35,8 @@
 }
 
 .reviews__display {
+    width: 100%;
+    min-height: rem(340px);
     background: url(../img/pictures/reviews_pic.png) top right no-repeat, #f8faf9;
     padding: rem(50px) rem(46px) rem(34px);
     margin-bottom: rem(28px);
@@ -52,14 +54,25 @@
         left: 50%;
         transform: translateX(-50%);
         top: rem(-65px);
-
-
     }
+
 }
 
 .reviews__display-inner { 
     display: flex;
     align-items: center;
+    opacity: 0;
+    // position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    height: 0;
+    
+    &.active {
+        opacity: 1;
+        height: 100%;
+    }
 
     @include tablets {
         flex-direction: column;
@@ -143,9 +156,6 @@
     &:hover {
         border-color: $darkGreen;  
     }
-    &--active {
-        border-color: $darkGreen;  
-    }
 }
 
 .interactive-avatar__link {
@@ -155,6 +165,10 @@
     bottom: 0;
     right: 0;
     display: block;
+
+    &.active {
+        border-color: $darkGreen;  
+    }
 }
 
 .interactive-avatar__photo {

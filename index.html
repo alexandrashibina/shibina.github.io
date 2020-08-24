@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1">  -->
+    <!--<meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1">  -->
+    <!--slider plugin--><link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!--thank you modal plugin--><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./layout/main.css">
     <title>CHOCCO</title>
 </head>
@@ -140,7 +142,7 @@
             </section>
             <section class="section slider-section">
                 <div class="container slider">
-                    <ul class="slider__list" id="sliderRoot">
+                    <ul class="slider__list">
                         <li class="slider__item">
                             <div class="slider__arrows">
                                 <svg class="arrow arrow--left">
@@ -165,7 +167,7 @@
                                         <li class="slider__ingredients-item item">
                                             <div class="item__icon">
                                                 <svg class="item__icon-element">
-                                                    <use xlink:href="./layout/sprites.svg#ingredients"></use>
+                                                    <use xlink:href="./layout/sprites.svg#grape"></use>
                                                 </svg>
                                             </div>
                                             <span class="item__desc">Виноград</span>
@@ -183,7 +185,7 @@
                                         <li class="slider__ingredients-item item">
                                             <div class="item__icon">
                                                 <svg class="item__icon-element">
-                                                    <use xlink:href="./layout/sprites.svg#seeds"></use>
+                                                    <use xlink:href="./layout/sprites.svg#almond"></use>
                                                 </svg>
                                             </div>
                                             <span class="item__desc">Кунжутное семя</span>
@@ -260,11 +262,11 @@
                                         </svg>
                                         <div class="slider__ingredients-title">Состав</div>
                                     </div>
-                                    <ul class="slider__ingredients-list" id="sliderRoot">
+                                    <ul class="slider__ingredients-list">
                                         <li class="slider__ingredients-item item">
                                             <div class="item__icon">
                                                 <svg class="item__icon-element">
-                                                    <use xlink:href="./layout/sprites.svg#grape"></use>
+                                                    <use xlink:href="./layout/sprites.svg#oat"></use>
                                                 </svg>
                                             </div>
                                             <span class="item__desc">Овес</span>
@@ -273,7 +275,7 @@
                                         <li class="slider__ingredients-item item">
                                             <div class="item__icon">
                                                 <svg class="item__icon-element">
-                                                    <use xlink:href="./layout/sprites.svg#wallnut"></use>
+                                                    <use xlink:href="./layout/sprites.svg#seaweed"></use>
                                                 </svg>
                                             </div>
                                             <span class="item__desc">Мор. водоросли</span>
@@ -282,7 +284,7 @@
                                         <li class="slider__ingredients-item item">
                                             <div class="item__icon">
                                                 <svg class="item__icon-element">
-                                                    <use xlink:href="./layout/sprites.svg#seeds"></use>
+                                                    <use xlink:href="./layout/sprites.svg#almond"></use>
                                                 </svg>
                                             </div>
                                             <span class="item__desc">Миндаль</span>
@@ -300,115 +302,7 @@
                                         <li class="slider__ingredients-item item">
                                             <div class="item__icon">
                                                 <svg class="item__icon-element">
-                                                    <use xlink:href="./layout/sprites.svg#apitherapy"></use>
-                                                </svg>
-                                            </div>
-                                            <span class="item__desc">Тыкв. семечи</span>
-                                            <span class="item__value">20 г</span>
-                                        </li>
-                                        <li class="slider__ingredients-item item">
-                                            <div class="item__icon">
-                                                <svg class="item__icon-element">
-                                                    <use xlink:href="./layout/sprites.svg#apitherapy"></use>
-                                                </svg>
-                                            </div>
-                                            <span class="item__desc">Зам. сахара</span>
-                                            <span class="item__value">4 г</span>
-                                        </li>
-                                        <li class="slider__ingredients-item item">
-                                            <div class="item__icon">
-                                                <svg class="item__icon-element">
-                                                    <use xlink:href="./layout/sprites.svg#beans"></use>
-                                                </svg>
-                                            </div>
-                                            <span class="item__desc">Какао бобы</span>
-                                            <span class="item__value">4 г</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="slider__desc">
-                                    <div class="slider__desc-title">Батончик “Морские водоросли”</div>
-                                    <div class="slider__desc-text">
-                                        <p>Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
-                                    </div>
-                                    <ul class="slider__desc-list">
-                                        <li class="slider__desc-item details">
-                                            <div class="details__title">Калорийность</div>
-                                            <div class="details__desc">120 ккал</div>
-                                        </li>
-                                        <li class="slider__desc-item details">
-                                            <div class="details__title">Вес</div>
-                                            <div class="details__desc">98 грамм</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="slider__order">
-                                    <span class="slider__order-price">140 ₽</span>
-                                    <button type="submit" class="button button__form button--color--green">Заказать</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="slider__item">
-                            <div class="slider__arrows">
-                                <svg class="arrow arrow--left">
-                                    <use xlink:href="./layout/sprites.svg#arrow"></use>
-                                </svg>
-                                <svg class="arrow arrow--right">
-                                    <use xlink:href="./layout/sprites.svg#arrow"></use>
-                                </svg>
-                            </div>
-                            <div class="slider__image">
-                                <img src="./img/pictures/chocolates1.png" alt="chocolates">
-                            </div>
-                            <div class="slider__content">
-                                <div class="slider__ingredients">
-                                    <div class="slider__ingredients-wrapper">
-                                        <svg class="slider__ingredients-icon">
-                                            <use xlink:href="./layout/sprites.svg#ingredients"></use>
-                                        </svg>
-                                        <div class="slider__ingredients-title">Состав</div>
-                                    </div>
-                                    <ul class="slider__ingredients-list" id="sliderRoot">
-                                        <li class="slider__ingredients-item item">
-                                            <div class="item__icon">
-                                                <svg class="item__icon-element">
-                                                    <use xlink:href="./layout/sprites.svg#grape"></use>
-                                                </svg>
-                                            </div>
-                                            <span class="item__desc">Овес</span>
-                                            <span class="item__value">25 г</span>
-                                        </li>
-                                        <li class="slider__ingredients-item item">
-                                            <div class="item__icon">
-                                                <svg class="item__icon-element">
-                                                    <use xlink:href="./layout/sprites.svg#wallnut"></use>
-                                                </svg>
-                                            </div>
-                                            <span class="item__desc">Мор. водоросли</span>
-                                            <span class="item__value">15 г</span>
-                                        </li>
-                                        <li class="slider__ingredients-item item">
-                                            <div class="item__icon">
-                                                <svg class="item__icon-element">
                                                     <use xlink:href="./layout/sprites.svg#seeds"></use>
-                                                </svg>
-                                            </div>
-                                            <span class="item__desc">Миндаль</span>
-                                            <span class="item__value">20 г</span>
-                                        </li>
-                                        <li class="slider__ingredients-item item">
-                                            <div class="item__icon">
-                                                <svg class="item__icon-element">
-                                                    <use xlink:href="./layout/sprites.svg#powder"></use>
-                                                </svg>
-                                            </div>
-                                            <span class="item__desc">Сухое молоко</span>
-                                            <span class="item__value">10 г</span>
-                                        </li>
-                                        <li class="slider__ingredients-item item">
-                                            <div class="item__icon">
-                                                <svg class="item__icon-element">
-                                                    <use xlink:href="./layout/sprites.svg#apitherapy"></use>
                                                 </svg>
                                             </div>
                                             <span class="item__desc">Тыкв. семечи</span>
@@ -459,12 +353,161 @@
                     </ul>
                 </div>
             </section>
+            <section class="section team-section">
+                <div class="container">
+                    <div class="team">
+                        <h2 class="section__title team-section__title">Команда</h2>
+                        <div class="team__display">
+                            <ul class="team__list team__list--desktop">
+                                <li class="team__item">
+                                    <div class="team__avatar">
+                                        <img src="./img/team/boris.jpg" alt="photo" class="team__avatar-photo">
+                                    </div>
+                                    <button type="button" class="team__title">
+                                        <h5 class="team__title-name">Борис Федорович</h5>
+                                        <svg class="team__title-icon">
+                                            <use xlink:href="./layout/sprites.svg#polygon-green"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="team__content">
+                                        <div class="team__content-block">
+                                            <div class="team__content-title">Главный технолог</div>
+                                            <div class="team__content-text">Отвечает за вкусовые качества и калорийность.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="team__item">
+                                    <div class="team__avatar">
+                                        <img src="./img/team/alla.jpg" alt="photo" class="team__avatar-photo">
+                                    </div>
+                                    <button type="button" class="team__title">
+                                        <h5 class="team__title-name">Алла Иванова</h5>
+                                        <svg class="team__title-icon">
+                                            <use xlink:href="./layout/sprites.svg#polygon-green"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="team__content">
+                                        <div class="team__content-block">
+                                            <div class="team__content-title">Главный технолог</div>
+                                            <div class="team__content-text">Отвечает за вкусовые качества и калорийность.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="team__item">
+                                    <div class="team__avatar">
+                                        <img src="./img/team/kirill.jpg" alt="photo" class="team__avatar-photo">
+                                    </div>
+                                    <button type="button" class="team__title">
+                                        <h5 class="team__title-name">Кирилл Матросов</h5>
+                                        <svg class="team__title-icon">
+                                            <use xlink:href="./layout/sprites.svg#polygon-green"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="team__content">
+                                        <div class="team__content-block">
+                                            <div class="team__content-title">Главный технолог</div>
+                                            <div class="team__content-text">Отвечает за вкусовые качества и калорийность.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="team__item">
+                                    <div class="team__avatar">
+                                        <img src="./img/team/mila.jpg" alt="photo" class="team__avatar-photo">
+                                    </div>
+                                    <button type="button" class="team__title">
+                                        <h5 class="team__title-name">Мила Рыжкова</h5>
+                                        <svg class="team__title-icon">
+                                            <use xlink:href="./layout/sprites.svg#polygon-green"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="team__content">
+                                        <div class="team__content-block">
+                                            <div class="team__content-title">Главный технолог</div>
+                                            <div class="team__content-text">Отвечает за вкусовые качества и калорийность.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="team__list team__list--mobile">
+                                <li class="team__item">
+                                    <button type="button" class="team__title">
+                                        <h5 class="team__title-name">Борис Федорович</h5>
+                                        <svg class="team__title-icon">
+                                            <use xlink:href="./layout/sprites.svg#polygon-green"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="team__content">
+                                        <div class="team__content-block">
+                                            <div class="team__avatar">
+                                                <img src="./img/team/boris.jpg" alt="photo" class="team__avatar-photo">
+                                            </div>
+                                            <div class="team__content-title">Главный технолог</div>
+                                            <div class="team__content-text">Отвечает за вкусовые качества и калорийность.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="team__item">
+                                    <button type="button" class="team__title">
+                                        <h5 class="team__title-name">Алла Иванова</h5>
+                                        <svg class="team__title-icon">
+                                            <use xlink:href="./layout/sprites.svg#polygon-green"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="team__content">
+                                        <div class="team__content-block">
+                                            <div class="team__avatar">
+                                                <img src="./img/team/alla.jpg" alt="photo" class="team__avatar-photo">
+                                            </div>
+                                            <div class="team__content-title">Главный технолог</div>
+                                            <div class="team__content-text">Отвечает за вкусовые качества и калорийность.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="team__item">
+                                    <button type="button" class="team__title">
+                                        <h5 class="team__title-name">Кирилл Матросов</h5>
+                                        <svg class="team__title-icon">
+                                            <use xlink:href="./layout/sprites.svg#polygon-green"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="team__content">
+                                        <div class="team__content-block">
+                                            <div class="team__avatar">
+                                                <img src="./img/team/kirill.jpg" alt="photo" class="team__avatar-photo">
+                                            </div>
+                                            <div class="team__content-title">Главный технолог</div>
+                                            <div class="team__content-text">Отвечает за вкусовые качества и калорийность.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="team__item">
+                                    <button type="button" class="team__title">
+                                        <h5 class="team__title-name">Мила Рыжкова</h5>
+                                        <svg class="team__title-icon">
+                                            <use xlink:href="./layout/sprites.svg#polygon-green"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="team__content">
+                                        <div class="team__content-block">
+                                            <div class="team__avatar">
+                                                <img src="./img/team/mila.jpg" alt="photo" class="team__avatar-photo">
+                                            </div>
+                                            <div class="team__content-title">Главный технолог</div>
+                                            <div class="team__content-text">Отвечает за вкусовые качества и калорийность.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="section reviews-section">
                 <div class="container">
                     <div class="reviews">
                         <h2 class="section__title reviews-section__title">Отзывы</h2>
-                        <div class="reviews__display">
-                            <div class="reviews__display-inner">
+                        <ul class="reviews__display">
+                            <li class="reviews__display-inner active" data-linked-with="one">
                                 <div class="reviews__avatar">
                                         <img src="./img/reviews/photo1.jpg" alt="photo" class="reviews__avatar-photo">
                                 </div>
@@ -475,22 +518,46 @@
                                     </div>
                                     <div class="reviews__author">Алена Хмельницкая</div>
                                 </article>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="reviews__display-inner" data-linked-with="two">
+                                <div class="reviews__avatar">
+                                        <img src="./img/reviews/photo2.jpg" alt="photo" class="reviews__avatar-photo">
+                                </div>
+                                <article class="reviews__content">
+                                    <h3 class="reviews__title">Идеально подходят для спортсменов</h3>
+                                    <div class="reviews__text">
+                                        <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.</p>
+                                    </div>
+                                    <div class="reviews__author">Вадим Грачев</div>
+                                </article>
+                            </li>
+                            <li class="reviews__display-inner" data-linked-with="three">
+                                <div class="reviews__avatar">
+                                        <img src="./img/reviews/photo3.jpg" alt="photo" class="reviews__avatar-photo">
+                                </div>
+                                <article class="reviews__content">
+                                    <h3 class="reviews__title">Лучшие батончики премиум уровня</h3>
+                                    <div class="reviews__text">
+                                        <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.</p>
+                                    </div>
+                                    <div class="reviews__author">Мария Орлова</div>
+                                </article>
+                            </li>
+                        </ul>
                         <div class="reviews__switcher">
                             <ul class="reviews__switcher-list">
-                                <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                                    <a href="" class="interactive-avatar__link">
+                                <li class="reviews__switcher-item interactive-avatar">
+                                    <a href="" class="interactive-avatar__link active" data-open="one">
                                         <img src="./img/reviews/photo1.jpg" alt="photo" class="interactive-avatar__photo">
                                     </a>
                                 </li>
                                 <li class="reviews__switcher-item interactive-avatar">
-                                    <a href="" class="interactive-avatar__link">
+                                    <a href="" class="interactive-avatar__link" data-open="two">
                                         <img src="./img/reviews/photo2.jpg" alt="photo" class="interactive-avatar__photo">
                                     </a>
                                 </li>
                                 <li class="reviews__switcher-item interactive-avatar">
-                                    <a href="" class="interactive-avatar__link">
+                                    <a href="" class="interactive-avatar__link" data-open="three">
                                         <img src="./img/reviews/photo3.jpg" alt="photo" class="interactive-avatar__photo">
                                     </a>
                                 </li>
@@ -504,39 +571,40 @@
                     <div class="order">
                         <h2 class="section__title order-section__title">Закажите доставку</h2>
                         <form class="form">
+                            <input type="hidden" name="to" value="somewhere@gmail.com">
                             <div class="form__column">
                                 <div class="form__row">
                                     <label class="form__item">
                                         <div class="form__title">Имя</div>
-                                        <input type="text" class="form__input" required>
+                                        <input type="text" class="form__input" name="name">
                                     </label>
                                     <label class="form__item">
                                         <div class="form__title">Телефон</div>
-                                        <input type="text" class="form__input" required>
+                                        <input type="text" class="form__input" name="phone">
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__item">
                                         <div class="form__title">Улица</div>
-                                        <input type="text" class="form__input" required>
+                                        <input type="text" class="form__input" name="street">
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__item">
                                         <div class="form__title">Дом</div>
-                                        <input type="text" class="form__input" required>
+                                        <input type="text" class="form__input" name="bld">
                                     </label>
                                     <label class="form__item">
                                         <div class="form__title">Корпус</div>
-                                        <input type="text" class="form__input" required>
+                                        <input type="text" class="form__input" name="part">
                                     </label>
                                     <label class="form__item">
                                         <div class="form__title">Квартира</div>
-                                        <input type="text" class="form__input" required>
+                                        <input type="text" class="form__input" name="apt">
                                     </label>
                                     <label class="form__item">
                                         <div class="form__title">Этаж</div>
-                                        <input type="text" class="form__input" required>
+                                        <input type="text" class="form__input" name="floor">
                                     </label>
                                 </div>
                             </div>
@@ -544,7 +612,7 @@
                                 <div class="form__row">
                                     <label class="form__item">
                                         <div class="form__title">Комментарий</div>
-                                        <textarea class="form__input form__input--textarea"></textarea>
+                                        <textarea class="form__input form__input--textarea" name="comment"></textarea>
                                     </label>
                                 </div>
                                 <div class="form__controls">
@@ -639,7 +707,7 @@
         </ul>
     </nav>
     <div class="overlay">
-        <svg class="overlay__icon" id="closeOverlay">
+        <svg class="close__icon" id="closeIcon">
             <use xlink:href="./layout/sprites.svg#close"></use>
         </svg>
         <div class="overlay__menu">
@@ -656,8 +724,36 @@
             </nav>
         </div>
     </div>
+    <div id="modal" class="modal">
+        <div class="modal__container">
+        <div class="modal__content">Сообщение отправлено</div>
+        <div class="modal__button-container">
+            <button type="submit" class="button button--color--green js-button-close-modal">Закрыть</button>
+        </div>
+    </div>
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" 
+        crossorigin="anonymous">
+    </script>
+
+    <!--Slider plugin link-->
+    <script 
+        src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js">
+    </script>
+
+    <!--thank you modal plugin link-->
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" 
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" 
+        crossorigin="anonymous">
+    </script>
+
+    <script src="./js/reviews-switcher.js"></script>
+    <script src="./js/team-dropdown.js"></script>
     <script src="./js/swipe.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/overlay-modal.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.overlay__icon {
+.close__icon {
     width: rem(20px);
     height: rem(20px);
     fill: #ffffff;
@@ -25,6 +25,10 @@
 .overlay__menu {
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     .menu {
         display: flex;

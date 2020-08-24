@@ -49,6 +49,10 @@
     padding: rem(22px) rem(11px);
     outline: none;
 
+    .input-error {
+        border-color: violet;
+    }
+
     &:focus {
         box-shadow: 0 0 rem(3px) rem(3px) #dee2bd;
     }
