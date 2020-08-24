@@ -4,18 +4,20 @@ const slider = $('.slider__list').bxSlider({
     controls: false
 });
 
-$('.arrow--left').click(e => {
+$('.arrow-destination-prev').click(e => {
+    e.preventDefault();
     slider.goToPrevSlide();
 })
 
-$('.arrow--right').click(e => {
+$('.arrow-destination-next').click(e => {
+    e.preventDefault();
     slider.goToNextSlide();
 })
 
 
 //without plugin
-// const arrowLeft = document.querySelectorAll('.arrow--left');
-// const arrowRight = document.querySelectorAll('.arrow--right');
+// const arrowLeft = document.querySelectorAll('#arrow-left');
+// const arrowRight = document.querySelectorAll('#arrow-right');
 // const slideWidth = document.querySelector('.slider__item');
 // const sliderList = document.querySelector('.slider__list');
 
@@ -35,7 +37,7 @@ $('.arrow--right').click(e => {
 // function moveRight () {
 //     sliderPosition += slideWidth.scrollWidth;
 
-//     if (sliderPosition === sliderList.scrollWidth) {
+//     if (sliderPosition === slideWidth.scrollWidth * 2) {
 //         sliderPosition = 0;
 //     }
     

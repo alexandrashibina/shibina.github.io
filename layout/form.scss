@@ -49,8 +49,8 @@
     padding: rem(22px) rem(11px);
     outline: none;
 
-    .input-error {
-        border-color: violet;
+    &-error {
+        border-color: #ab2121;
     }
 
     &:focus {
@@ -71,6 +71,8 @@
         padding: rem(10px);
     }
 }
+
+
 
 .form__controls {
     display: flex;

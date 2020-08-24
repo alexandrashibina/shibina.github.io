@@ -645,6 +645,7 @@ table {
   flex-grow: 0;
   flex-shrink: 0;
   transition: 0.5s all ease-out;
+  position: relative;
 }
 
 .slider__item {
@@ -669,6 +670,7 @@ table {
   fill: #000000;
   overflow: hidden;
   cursor: pointer;
+  z-index: 30;
 }
 .arrow--left {
   transform: rotate(180deg);
@@ -879,7 +881,6 @@ table {
 
 .team__list--desktop {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .team__list--mobile {
@@ -928,7 +929,7 @@ table {
 }
 .team__avatar-photo {
   object-fit: cover;
-  width: 100%;
+  object-position: left;
   height: 100%;
 }
 
@@ -967,6 +968,11 @@ table {
   transition: height 0.3s;
   position: absolute;
   top: 100%;
+}
+@media screen and (max-width: 768px) {
+  .team__content {
+    position: static;
+  }
 }
 .team__content-title {
   color: #000000;
@@ -1262,8 +1268,8 @@ table {
   padding: 1.2222222222rem 0.6111111111rem;
   outline: none;
 }
-.form__input .input-error {
-  border-color: violet;
+.form__input-error {
+  border-color: #ab2121;
 }
 .form__input:focus {
   box-shadow: 0 0 0.1666666667rem 0.1666666667rem #dee2bd;

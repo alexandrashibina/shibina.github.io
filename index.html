@@ -142,16 +142,20 @@
             </section>
             <section class="section slider-section">
                 <div class="container slider">
+                    <div class="slider__arrows">
+                        <a href="#" class="arrow-destination-prev">
+                            <svg class="arrow arrow--left">
+                                <use xlink:href="./layout/sprites.svg#arrow"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="arrow-destination-next">
+                            <svg class="arrow arrow--right">
+                                <use xlink:href="./layout/sprites.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
                     <ul class="slider__list">
                         <li class="slider__item">
-                            <div class="slider__arrows">
-                                <svg class="arrow arrow--left">
-                                    <use xlink:href="./layout/sprites.svg#arrow"></use>
-                                </svg>
-                                <svg class="arrow arrow--right">
-                                    <use xlink:href="./layout/sprites.svg#arrow"></use>
-                                </svg>
-                            </div>
                             <div class="slider__image">
                                 <img src="./img/pictures/chocolates2.png" alt="chocolates">
                             </div>
@@ -243,14 +247,6 @@
                             </div>
                         </li>
                         <li class="slider__item">
-                            <div class="slider__arrows">
-                                <svg class="arrow arrow--left">
-                                    <use xlink:href="./layout/sprites.svg#arrow"></use>
-                                </svg>
-                                <svg class="arrow arrow--right">
-                                    <use xlink:href="./layout/sprites.svg#arrow"></use>
-                                </svg>
-                            </div>
                             <div class="slider__image">
                                 <img src="./img/pictures/chocolates1.png" alt="chocolates">
                             </div>
@@ -726,9 +722,10 @@
     </div>
     <div id="modal" class="modal">
         <div class="modal__container">
-        <div class="modal__content">Сообщение отправлено</div>
-        <div class="modal__button-container">
-            <button type="submit" class="button button--color--green js-button-close-modal">Закрыть</button>
+            <div class="modal__content">Сообщение отправлено</div>
+            <div class="modal__button-container">
+                <button type="submit" class="button button--color--green js-button-close-modal">Закрыть</button>
+            </div>
         </div>
     </div>
     <script 
