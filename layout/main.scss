@@ -45,18 +45,23 @@ $z-cracker-pic: 10;
 //hamburger menu
 @import 'hamburger';
 @import 'overlay';
+@import 'closeIcon';
 
 //why-section
 @import 'benefits';
 
 //slider-section
 @import 'slider';
+@import 'arrow';
+@import 'item';
+@import 'bxslider';
 
 //team-section
 @import 'team';
 
 //reviews-section
 @import 'reviews';
+@import 'interactive-avatar';
 
 //order-section
 @import 'order';
@@ -72,3 +77,9 @@ $z-cracker-pic: 10;
 
 //fixed-menu
 @import 'fixed-menu';
+
+//form modal window
+@import 'modal';
+
+//fancybox properties
+@import 'fancybox';
